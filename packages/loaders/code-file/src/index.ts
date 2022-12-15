@@ -45,7 +45,7 @@ export type CodeFileLoaderOptions = {
 } & CodeFileLoaderConfig &
   BaseLoaderOptions;
 
-const FILE_EXTENSIONS = ['.ts', '.tsx', '.js', '.jsx', '.vue', '.svelte'];
+const FILE_EXTENSIONS = ['.ts', '.tsx', '.js', '.jsx', '.vue', '.svelte', '.mjs'];
 
 function createGlobbyOptions(options: CodeFileLoaderOptions): GlobbyOptions {
   return { absolute: true, ...options, ignore: [] };
